@@ -1,5 +1,5 @@
 #store in dictionary 
-def containsDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate(nums) -> bool:
     freq = dict()
     for i in range(len(nums)):
         if nums[i] not in freq: 
@@ -9,7 +9,7 @@ def containsDuplicate(self, nums: List[int]) -> bool:
     return False
 
 #store in list
-def containsDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate(nums) -> bool:
     duplicate = []
     for i in nums:
         if i in duplicate:
@@ -19,5 +19,5 @@ def containsDuplicate(self, nums: List[int]) -> bool:
     return False
 
 # convert to set. Because set doesn't allow duplicated values, the lenth will be different if duplicated values exist
-def containsDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate(nums) -> bool:
         return len(set(nums)) != len(nums)
